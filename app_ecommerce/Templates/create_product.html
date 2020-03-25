@@ -2,7 +2,7 @@
 {% block content %}
     <div class="col-md-7">
         <div class="content-section">
-            <form method="POST" action="">
+            <form method="POST" action="" enctype="multipart/form-data">
                 {{ form.hidden_tag() }}
                 <fieldset class="form-group">
                     <legend class="border-bottom mb-4">Create a new Product</legend>
@@ -59,31 +59,31 @@
                         {% endif %}
                     </div>
                     <div class="form-group">
-                    {{ form.image_file1.label()}}
-                    {{ form.image_file1(class='form-control-file')}}
-                    {% if form.image_file1.errors %}
-                        {% for error in form.image_file1.errors %}
-                            <span class="text-danger">{{ error }}</span>
-                        {% endfor %}
-                    {% endif %}
+                        {{ form.image1.label()}}
+                        {{ form.image1(class='form-control-file')}}
+                        {% if form.image1.errors %}
+                            {% for error in form.image1.errors %}
+                                <span class="text-danger">{{ error }}</span>
+                            {% endfor %}
+                        {% endif %}
                     </div>
                     <div class="form-group">
-                    {{ form.image_file2.label()}}
-                    {{ form.image_file2(class='form-control-file')}}
-                    {% if form.image_file2.errors %}
-                        {% for error in form.image_file2.errors %}
-                            <span class="text-danger">{{ error }}</span>
-                        {% endfor %}
-                    {% endif %}
+                        {{ form.image2.label()}}
+                        {{ form.image2(class='form-control-file')}}
+                        {% if form.image2.errors %}
+                            {% for error in form.image2.errors %}
+                                <span class="text-danger">{{ error }}</span>
+                            {% endfor %}
+                        {% endif %}
                     </div>
                     <div class="form-group">
-                    {{ form.image_file3.label()}}
-                    {{ form.image_file3(class='form-control-file')}}
-                    {% if form.image_file3.errors %}
-                        {% for error in form.image_file3.errors %}
-                            <span class="text-danger">{{ error }}</span>
-                        {% endfor %}
-                    {% endif %}
+                        {{ form.image3.label()}}
+                        {{ form.image3(class='form-control-file')}}
+                        {% if form.image3.errors %}
+                            {% for error in form.image3.errors %}
+                                <span class="text-danger">{{ error }}</span>
+                            {% endfor %}
+                        {% endif %}
                     </div>
                     <div class="form-group">
                     {{ form.category.label(class="form-control-label")}}
