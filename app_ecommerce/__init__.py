@@ -19,6 +19,8 @@ mail = Mail(app)
 
 from app_ecommerce.main.routes import main
 from app_ecommerce.users.routes import users
+from app_ecommerce.products.routes import products
 app.register_blueprint(main)
 app.register_blueprint(users)
+app.register_blueprint(products)
 

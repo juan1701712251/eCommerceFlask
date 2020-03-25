@@ -1,11 +1,15 @@
 {% extends 'layout.html' %}
 {% block content %}
-    <!-- Products here -->
+    <!-- Categories here -->
     <div class="col-md-5">
       <div class="content-section">
         <h3>Categories</h3>
-        <p class='text-muted'>Choose a category
-        </p>
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action">Categories</a>
+            {% for cat in categories %}
+            <a href="#" class="list-group-item list-group-item-action list-group-item-primary">{{cat.name}}</a>
+            {% endfor %}
+          </div>
       </div>
     </div>
     <!-- Products here -->
