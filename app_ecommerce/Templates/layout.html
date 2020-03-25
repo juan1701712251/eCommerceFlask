@@ -30,7 +30,7 @@
                 {% if current_user.is_authenticated %}
                     <a class="nav-item nav-link" href="{{url_for('users.logout')}}">Logout</a>
                     <a class="nav-item nav-link" href="{{url_for('products.new_product')}}">Create a Product</a>
-                    <a class="nav-item nav-link" href="#">Create a Category</a>
+                    <a class="nav-item nav-link" href="{{url_for('categories.new_category')}}">Create a Category</a>
                 {% else %}
                     <a class="nav-item nav-link" href="{{url_for('users.login')}}">Login</a>
                     <a class="nav-item nav-link" href="{{url_for('users.register')}}">Register as admin</a>

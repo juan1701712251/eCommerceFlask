@@ -1,7 +1,6 @@
 from flask import (render_template, url_for, flash,
                    redirect, Blueprint)
 from flask_login import login_required
-from app_ecommerce.categories.utils import get_categories_allowed
 from app_ecommerce.products.utils import save_picture
 from app_ecommerce.products.forms import ProductsForm
 from app_ecommerce.models import Product, Category
@@ -13,7 +12,6 @@ products = Blueprint('products',__name__)
 @login_required
 def new_product():
     form = ProductsForm()
-    form.category.choices = get_categories_allowed()
     if form.validate_on_submit():
         #print(form.image1.data)
         #print(form.image2.data)

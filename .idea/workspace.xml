@@ -3,11 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="aea588e8-fd21-4e9c-8f53-32aa9489793e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_ecommerce/Templates/create_product.html" beforeDir="false" afterPath="$PROJECT_DIR$/app_ecommerce/Templates/create_product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_ecommerce/products/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_ecommerce/products/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_ecommerce/Templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/app_ecommerce/Templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_ecommerce/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_ecommerce/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_ecommerce/categories/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_ecommerce/categories/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_ecommerce/categories/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_ecommerce/categories/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_ecommerce/categories/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_ecommerce/categories/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app_ecommerce/products/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_ecommerce/products/routes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app_ecommerce/site.db" beforeDir="false" afterPath="$PROJECT_DIR$/app_ecommerce/site.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_ecommerce/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_ecommerce/users/forms.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +33,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -74,7 +76,7 @@
       <updated>1585086867865</updated>
       <workItem from="1585086869589" duration="3320000" />
       <workItem from="1585090251100" duration="15310000" />
-      <workItem from="1585158616020" duration="11496000" />
+      <workItem from="1585158616020" duration="14333000" />
     </task>
     <servers />
   </component>
