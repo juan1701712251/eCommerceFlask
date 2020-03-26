@@ -5,7 +5,7 @@ from app_ecommerce.categories.utils import get_categories_allowed
 from app_ecommerce.products.utils import save_picture
 from app_ecommerce.products.forms import ProductsForm
 from app_ecommerce.models import Product, Category
-from app_ecommerce import db
+from app_ecommerce import db,quote
 
 products = Blueprint('products',__name__)
 
@@ -42,3 +42,8 @@ def new_product():
         return redirect(url_for('main.home'))
 
     return render_template('create_product.html', title='New Product', form=form, legend='New Product')
+
+@products.route('/product/<int:product_id>')
+def view_product(product_id):
+    product = Product.query.get(product_id)
+    return render_template('product.html', title='Product',quote=quote,product=product)

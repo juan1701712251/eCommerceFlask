@@ -5,6 +5,7 @@ from flask_login import LoginManager
 from flask_mail import Mail
 from app_ecommerce.config import Config
 
+
 app = Flask(__name__)
 app.config.from_object(Config)
 #Manejo de Base de Datos
@@ -16,6 +17,9 @@ login_manager = LoginManager(app)
 login_manager.login_view = 'users.login'
 login_manager.login_message_category = 'info'
 mail = Mail(app)
+
+from app_ecommerce.products.utils import get_quote_USD_to
+quote = get_quote_USD_to('MXN')
 
 from app_ecommerce.main.routes import main
 from app_ecommerce.users.routes import users

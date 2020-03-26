@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+        <article class="media content-section">
+            <a class="col-md-1 list-group-item list-group-item-action list-group-item-link" href="javascript:history.back()"> Back</a>
+            <div class="col-md-11">
+              <div class="media-body">
+                  <h2 class="mr-2 text-primary" >{{ product.name }}</h2>
+                  <p class="text-muted">weight: {{ product.weight }}</p>
+                  <p class="article-content">Description: {{ product.description }}</p>
+                  <br>
+                  <h4 class="text-muted">Cost</h4>
+                  <p class="article-title">$MXN {{ product.price*quote|round|int }}</p>
+                  <p class="article-title text-muted">$USD {{ product.price|round(2) }}</p>
+                </div>
+              </div>
+        </article>
+        <article class="media content-section">
+
+          <div class="row">
+            <div class="col-md-auto">
+            <img class="mr-3" src="{{url_for('static',filename='product_pics/'+product.image_file1)}}"
+                 alt="Generic placeholder image" height="150" width="150">
+              </div>
+            <div class="col-md-auto">
+            <img class="mr-3" src="{{url_for('static',filename='product_pics/'+product.image_file2)}}"
+                 alt="Generic placeholder image"  height="150" width="150">
+            </div>
+              <div class="col-md-auto">
+            <img class="mr-3" src="{{url_for('static',filename='product_pics/'+product.image_file3)}}"
+                 alt="Generic placeholder image"  height="150" width="150">
+              </div>
+          </div>
+        </article>
+
+{% endblock %}

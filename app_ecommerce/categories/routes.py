@@ -3,9 +3,9 @@ from flask import (render_template, url_for, flash,
 from flask_login import login_required
 from app_ecommerce.categories.utils import get_categories
 from app_ecommerce.categories.forms import CategoryForm
-from app_ecommerce.products.utils import save_picture
-from app_ecommerce.models import Category, Product
-from app_ecommerce import db
+from app_ecommerce.products.utils import save_picture,get_quote_USD_to
+from app_ecommerce.models import Category
+from app_ecommerce import db,quote
 
 categories = Blueprint('categories',__name__)
 
@@ -41,4 +41,4 @@ def products_for_category(category_id):
     c = Category.query.get(category_id)
     products = c.products
     categories = [c]
-    return render_template('home.html',categories=categories, products=products)
+    return render_template('home.html',categories=categories, products=products,quote=quote)
