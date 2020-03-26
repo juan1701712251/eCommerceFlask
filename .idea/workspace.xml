@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aea588e8-fd21-4e9c-8f53-32aa9489793e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_ecommerce/Templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/app_ecommerce/Templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_ecommerce/Templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/app_ecommerce/Templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_ecommerce/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_ecommerce/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_ecommerce/categories/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_ecommerce/categories/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_ecommerce/products/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_ecommerce/products/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_ecommerce/products/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_ecommerce/products/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_ecommerce/static/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app_ecommerce/static/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_ecommerce/site.db" beforeDir="false" afterPath="$PROJECT_DIR$/app_ecommerce/site.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +48,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -78,6 +72,7 @@
       <workItem from="1585090251100" duration="15310000" />
       <workItem from="1585158616020" duration="28493000" />
       <workItem from="1585191075204" duration="5403000" />
+      <workItem from="1585235733287" duration="800000" />
     </task>
     <servers />
   </component>
@@ -89,6 +84,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1585169530267" />
+    <state x="463" y="108" key="FileChooserDialogImpl" timestamp="1585236186010">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="108" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1585236186010" />
+    <state x="162" y="17" key="SettingsEditor" timestamp="1585236530536">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="162" y="17" key="SettingsEditor/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1585236530536" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1585105859022">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
