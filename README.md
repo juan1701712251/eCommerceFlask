@@ -10,10 +10,10 @@ _This project runs within a virtual environment._
 
 ### Python 3.6 or higher is required
 _In Windows_
-* Clone o download this repository
-* Open the repository  in the root folder
+* Clone or download this repository
+* Open the downloaded folder
 * Open the command line and type the following command
-
+![Aquí la descripción de la imagen por si no carga](https://github.com/juan1701712251/eCommerceFlask/blob/master/assests1.png)
 ```
 python -m venv test-env
 ```
