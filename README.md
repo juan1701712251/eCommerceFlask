@@ -10,7 +10,7 @@ _Within a virtual environment._
 ## Requirements 📋
 
 ### Python 3.6 or higher required
-_In Windows, open the folder you downloaded and open the command line in the root folder_
+_In Windows, open the downloaded folder them in the root folder, open the command line_
 
 ```
 python -m venv test-env
@@ -28,6 +28,6 @@ pip install -r requirements.txt
 python run.py
 ```
 
-## Finally open loopback direction 🤓
+## Finally open loopback URL address  🤓
 
 http://127.0.0.1:5000/
