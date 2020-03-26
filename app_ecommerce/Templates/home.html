@@ -1,23 +1,40 @@
 {% extends 'layout.html' %}
 {% block content %}
     <!-- Categories here -->
-    <div class="col-md-5">
+    <div class="col-md-4">
       <div class="content-section">
-        <h3>Categories</h3>
+        <h3 class="text-center">Categories</h3>
         <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action">Categories</a>
+            <a class="list-group-item list-group-item-action list-group-item-link" href="javascript:history.back()"> Back</a>
             {% for cat in categories %}
-            <a href="#" class="list-group-item list-group-item-action list-group-item-primary">{{cat.name}}</a>
+                {% if cat.subCategories|length > 0 %}
+                    <a href="{{url_for('categories.subcategories_for_category',category_id=cat.id)}}" class="list-group-item list-group-item-action list-group-item-light">{{cat.name}}</a>
+                {% else %}
+                    <a href="{{url_for('categories.products_for_category',category_id=cat.id)}}"
+                   class="list-group-item list-group-item-action list-group-item-light">{{cat.name}}</a>
+                {% endif %}
             {% endfor %}
           </div>
       </div>
     </div>
     <!-- Products here -->
-    <div class="col-md-7">
-      <div class="content-section">
-        <h3>Products</h3>
-          aqui van los productos
-        </p>
-      </div>
-    </div>
-{% endblock content %}
+    {% if products %}
+        <div class="col-md-8">
+          <div class="content-section">
+            <h3 class="text-center">Products</h3>
+              <div class="card-columns">
+                  {% for p in products %}
+                    <div class="card" style="width: 12rem;" >
+                      <img class="card-img-top" src="{{url_for('static',filename='product_pics/'+p.image_file1)}}" height="200rem" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">{{p.name}}</h5>
+                        <p class="card-text">{{p.price}}</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                {% endfor %}
+              </div>
+          </div>
+        </div>
+    {% endif %}
+{% endblock %}

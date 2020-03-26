@@ -14,3 +14,5 @@ def get_categories():
     for cat in categories:
         output.append((cat.id,cat.name))
     return output
+
+

@@ -6,5 +6,5 @@ main = Blueprint('main',__name__)
 @main.route('/')
 @main.route('/home')
 def home():
-    categories = Category.query.all()
+    categories = Category.query.filter_by(parent_category ='root').all()
     return render_template('home.html',categories=categories)

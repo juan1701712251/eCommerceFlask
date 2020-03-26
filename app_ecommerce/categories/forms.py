@@ -1,8 +1,8 @@
 from flask_wtf import FlaskForm
 from flask_wtf.file import FileField,FileAllowed
-from wtforms import StringField, SubmitField, TextAreaField, FloatField,  SelectField
+from wtforms import StringField, SubmitField,SelectField
 from wtforms.validators import DataRequired,Length
-from app_ecommerce.categories.utils import get_categories_allowed, get_categories
+from app_ecommerce.categories.utils import get_categories
 
 class NonValidatingSelectField(SelectField):
     def pre_validate(self, form):
