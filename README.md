@@ -4,8 +4,7 @@ _This project was made for the "perfiltic" test, focused on flask as framework_
 
 ## How to run this project 🚀
 
-_Within a virtual environment._
-
+_This project runs within a virtual environment._
 
 ## Requirements 📋
 
