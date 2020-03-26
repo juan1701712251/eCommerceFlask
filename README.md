@@ -8,8 +8,11 @@ _This project runs within a virtual environment._
 
 ## Requirements 📋
 
-### Python 3.6 or higher required
-_In Windows, open the downloaded folder them in the root folder, open the command line_
+### Python 3.6 or higher is required
+_In Windows_
+* Clone o download this repository
+* Open the repository  in the root folder
+* Open the command line and type the following command
 
 ```
 python -m venv test-env
