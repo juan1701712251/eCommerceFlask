@@ -34,5 +34,5 @@ python run.py
 
 http://127.0.0.1:5000/
 
-## Nota:
+## Note:
 If you want to use the password restoration function, you must configure the environment variables with your email and password
